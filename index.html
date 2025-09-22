@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- head
+
+        Purpose:
+        - Title used here shows up in the browser tab
+        - Link to the favicon (small image that appears in the browser tab)
+        - Link to the CSS file (used to style the webpage)
+
+        When To Modify:
+        - [ ] Project 2 (REQUIRED FEATURE) 
+        - [ ] Project 2 (STRETCH FEATURE) (favicon)
+        - [ ] Any time after
+        -->
+        <title>Welcome Week 2025</title>
+        <link rel="icon" href="./img/aasu.png">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    
+    <body>
+    
+<!-- navbar
+
+Purpose:
+- Navigation bar that allows users to jump to different sections of the webpage
+- Also holds buttons for user settings (dark mode, reduce motion)
+
+When To Modify:
+- [ ] Project 4 (REQUIRED FEATURE)
+- [ ] Project 5 (REQUIRED FEATURE) 
+- [ ] Project 8 (STRETCH FEATURE) 
+- [ ] Any time between / after
+-->
+<div class="navbar">
+    <ul>
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#schedule">Schedule</a></li>
+    <li><a href="#links">Links</a></li>
+    <li><button id="theme-button">Toggle Dark Mode</button></li>
+    </ul>
+</div>
+        <!-- headings
+
+        Purpose:
+        - Main header section of the webpage
+        - Contains the title, subtitle, image, and key buttons for the webpage
+
+        When To Modify:
+        - [ ] Project 2 (REQUIRED FEATURE) 
+        - [ ] Project 3 (REQUIRED FEATURE) 
+        - [ ] Project 4 (REQUIRED FEATURE) 
+        - [ ] Any time after
+        -->
+    <div class="header-container" id="home">
+    <div class="header-item">
+        <img id="header-img" src="./img/aasu2.png" alt="AASU Logo" />
+    </div>
+    
+    <div class="header-item">
+        <h1>AASU's Fall 2025 Welcome Week</h1>
+        <h3>Get sorted into your houses!</h3>
+    </div>
+    
+    <div class="header-item">
+        <button class="header-button" type="button">Learn More!</button>
+        <button class="header-button" type="button">Resources</button>
+    </div>
+    </div>
+
+        
+        <!-- about
+
+        Purpose:
+        - Section for general info about the event
+        - Contains a video, description, and key points about the event
+
+        When To Modify:
+        - [ ] Project 2 (REQUIRED FEATURE) 
+        - [ ] Project 2 (STRETCH FEATURE) 
+        - [ ] Project 4 (STRETCH FEATURE) 
+        - [ ] Any time between / after
+        --> 
+        <h2 id="about">About the Event</h2>
+        <p>This event is the Asian American Student Union's annual fall welcome week! 
+        <br></br>
+         AASU is an advocacy based organization that focuses on community building and education on APIDA issues. 
+         <br></br>
+         Come join us for an exciting week of events to get to know our amazing community, as well as get sorted into your AASU house! </p>
+
+        <h3>What to Expect</h3>
+        <h4>Get to know our E-Board and mission through fun social events!</h4>
+        <ul>
+            <li> <b>Meet the Houses:</b> <i>Which one will you be sorted into?</i></li>
+            <li> <b>Awesome Games:</b> <i>Have fun with new friends!</i></li>
+            <li> <b>Join Our Community:</b> <i>Meet the lovely people who make this all possible ˚ʚ♡ɞ˚</i></li>
+        </ul>
+
+        <!-- schedule
+
+        Purpose:
+        - Section for specific info about the event's schedule
+        - Contains images and descriptions of each activity
+
+        When To Modify:
+        - [ ] Project 2 (REQUIRED FEATURE) 
+        - [ ] Project 4 (STRETCH FEATURE) 
+        - [ ] Any time between / after
+        --> 
+        <h2 id="schedule">Event Schedule</h2>
+        <div class="schedule-container">
+            <div id="schedule-item">            
+                <img alt="game_graphic" src="./img/game.jpg"/>
+                <h3>Game Night</h3>
+                <p>Play fun games like Just Dance, Jenga, and Pictionary as you continue to get to know the houses and AASU.</p>
+            </div>
+            <div id="schedule-item">
+                <img alt="craft_graphic" src="./img/craft.png"/>
+                <h3>Craft Night</h3>
+                <p>Join us for some creative and relaxing craft activities!</p>
+            </div>
+            <div id="schedule-item">
+                <img alt="fundraiser_graphic" src="./img/jumbo.jpeg"/>
+                <h3>Jumbo Jumbo Fundraiser</h3>
+                <p>Enjoy some delicious boba while supporting AASU!</p>
+            </div>
+        </div>
+
+
+<!-- rsvp
+
+Purpose:
+- Section for users to sign up for the event
+- Contains a form for users to input their information, 
+and a list of other users who have signed up
+
+When To Modify:
+- [ ] Project 6 (REQUIRED FEATURE) 
+- [ ] Project 6 (STRETCH FEATURE) 
+- [ ] Any time after
+--> 
+    <div id="rsvp">
+        <h2>RSVP</h2>
+        <div class="rsvp-container">
+            <div class="rsvp-para">
+                <!-- info goes here -->
+                 RSVP for fun Welcome Week activities!
+                 Complete the form so we can learn about you and see what your future house could be...
+                 Hope to see you soon!
+            </div>
+            <div class="rsvp-participants">
+                <p>🎟️ Hana from Maryland has RSVP'd.</p>
+                <p>🎟️ Sai from New Hampshire has RSVP'd.</p>
+                <p>🎟️ Divya from Virginia has RSVP'd.</p>
+            </div>
+            <div class="participants">
+                <!-- RSVPs go here -->
+            </div>
+        </div>
+
+        <!--- Sign RSVP Form --->
+        <div class="form-container">
+            <form id="rsvp-form" title="rsvp-form">
+                <!-- form inputs go here -->
+                <label>Name:</label>
+                <input id="name">
+                <label>Grade:</label>
+                <input id="grade">
+                <label>Email:</label>
+                <input id="email">
+                <br></br>
+            </form>
+            <!-- Submit button -->
+            <button id="rsvp-button">Submit RSVP</button>
+        </div>      
+    </div>
+<!-- success modal
+
+Purpose:
+- Modal that appears when a user successfully signs up for the event
+- Contains a personalized message and image
+
+When To Modify:
+- [ ] Project 9 (REQUIRED FEATURE)
+- [ ] Project 9 (STRETCH FEATURE) 
+- [ ] Any time after
+--> 
+
+<div id="thanks-modal" class="modal">
+    <div class="modal-container">
+        <div id="modal-item">
+            <p id="modal-text">You've RSVPed for the best Welcome Week event of the semester!</p>
+        </div>
+        <div id="modal-item">
+            <img id="modal-img" src="./img/thank.png"/>
+        </div>
+    </div>
+</div>
+        <!-- links
+
+        Purpose:
+        - Links to other resources related to the event
+
+        When To Modify:
+        - [ ] Project 2 (STRETCH FEATURE) 
+        - [ ] Project 4 (STRETCH FEATURE) 
+        - [ ] Any time between / after
+        --> 
+        <h2 id="links">Links</h2>
+
+        <!-- This <a> block is one link.  Copy and paste all 6 lines to create another link. -->
+        <a class="block" href="https://kme.rgy.mybluehost.me/">
+            <article>
+                <h3>AASU Website</h3>
+                <p>Check out our website to learn more about what we do!</p>
+            </article>
+        </a>
+        <a class="block" href="https://join.slack.com/t/aasugenbod/shared_invite/zt-38j4pgkyd-mfrEbwXdc8451w8nRcwbUg">
+            <article>
+                <h3>Join our Slack</h3>
+                <p>Join our Gen Bod Slack to stay updated on events.</p>
+            </article>
+        </a>
+            
+        <div class="footer">
+        <a class="footer-link" href="https://umd.campuslabs.com/engage/organization/umcpaasu">
+            <article><p>TerpLink</p></article>
+        </a>
+        <a class="footer-link" href="https://beacons.ai/umcpaasu?fbclid=PAQ0xDSwLREY1leHRuA2FlbQIxMQABpz3af0PPdF-margEiqwDG1bV5VxIjF5-YZOEtuaBCNU8I0C3k9lf_HZgzMaL_aem_DjuRKqVa2MvH1h6fZdK83Q">
+            <article><p>Beacons</p></article>
+        </a>
+        </div>
+    <script src="index.js"></script>
+    </body>
+</html>
